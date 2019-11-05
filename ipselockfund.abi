@@ -1,0 +1,108 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "changestatus",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                },
+                {
+                    "name": "status",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "lockfunds",
+            "base": "",
+            "fields": [
+                {
+                    "name": "address",
+                    "type": "name"
+                },
+                {
+                    "name": "from_name",
+                    "type": "string"
+                },
+                {
+                    "name": "lockfund",
+                    "type": "asset"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                },
+                {
+                    "name": "total_issue_times",
+                    "type": "uint32"
+                },
+                {
+                    "name": "total_issue_asset",
+                    "type": "asset"
+                },
+                {
+                    "name": "grade",
+                    "type": "string"
+                },
+                {
+                    "name": "status",
+                    "type": "string"
+                },
+                {
+                    "name": "last_issue_time",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "transfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "changestatus",
+            "type": "changestatus",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "transfer",
+            "type": "transfer",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "lockfunds",
+            "type": "lockfunds",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
