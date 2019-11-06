@@ -18,3 +18,9 @@
 
 然后到解锁期开始后，每天都会根据浮动利率返相应的Token到用户账号。
 
+### 权限
+
+cleos set account permission ipselockfund active permission.json -p ipselockfund@active
+
+cleos set account permission test active --add-code
+
